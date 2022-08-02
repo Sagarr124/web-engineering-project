@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo-white.png" alt="SIBAU Logo"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -23,6 +25,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>Pakistan's No. 1 University</h1>
@@ -30,5 +33,46 @@
             <a href="#" class="hero-btn">Visit Us To Know More</a>
         </div>
     </section>
+    <!----course-->
+    <section class="course">
+        <h1>Degree Program we Offer</h1>
+        <p></p>
+        <div class="row">
+            <div class="course-col">
+                <h3>UnderGraduate</h3>
+                <p>BBA</p><br />
+                    <p>Computer-Science</p><br />
+                    <p>Software Engineering</p><br />
+                    <p>Accouning and Finance</p><br />
+                    <p>Electrical Engineering</p>
+                  
+            </div>
+            <div class="course-col">
+                <h3>Graduate</h3>
+                <p>M.Phil</p><br />
+                    <p>MBA 2 Years</p><br />
+                    <p>MS Computer Science</p><br />
+                    <p>MS Management Science</p><br />
+                    <p>MS Mathematics</p><br />
+                    <p>ME-Electrical Engineering</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduate</h3>
+                <p>Ph.D Management Science</p><br />
+                    <p>Ph.D Computer Science</p><br />
+                    <p>Ph.D Electrical Engineering</p><br />
+                    <p>Ph.D Mathematics</p><br />
+            </div>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById('navLinks')
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
 </body>
 </html>
