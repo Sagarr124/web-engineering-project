@@ -1,10 +1,11 @@
 # web-engineering-project
-This is a university website for Sukkur IBA University based on HTML, CSS and JavaScript. It is a simple but modern-looking website for students on Sukkur IBA University. The website contains the following pages:  
+This is a university website for Sukkur IBA University based on HTML, CSS and JavaScript. It is a simple but modern-looking website for the students of the Sukkur IBA University. The website contains the following pages:  
 1. Home  
 2. About  
 3. Admissions  
 4. Blog  
-5. Contact  
+5. Contact    
+
 
 
 Made by:  
